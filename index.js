@@ -3,6 +3,10 @@ import { ApolloServer } from "@apollo/server";
 import { startStandaloneServer } from '@apollo/server/standalone';
 import { PubSub } from 'graphql-subscriptions';
 import jwt from 'jsonwebtoken';
+import bodyParser from "body-parser";
+import cors from 'cors';
+
+import keys from "./keys.cjs";
 
 const pubsub = new PubSub();
 
